@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoPokeActivity"
+>
+
+    <TextView
+        android:id="@+id/nomePoke"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Chamander"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomePoke"
+        tools:src="@drawable/chamander" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Types:"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/imagem"
+        app:layout_constraintTop_toBottomOf="@+id/imagem" />
+
+    <TextView
+
+        android:id="@+id/txtTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Fire e Water"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/imagem"
+        app:layout_constraintTop_toBottomOf="@+id/imagem" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
